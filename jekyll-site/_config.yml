@@ -5,9 +5,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-ga_tracking_id: UA-90395408-1
-title: VoltorbFlip.com - The Best Calculator and Solver
-heading: VoltorbFlip.com
+ga_tracking_id: G-H0Q3LS69ER
 social_media_links:
-  twitter: https://twitter.com/_mrtenda
+  twitter: https://x.com/_mrtenda
   github: https://github.com/mrtenda/voltorbflipdotcom
+meta:
+  title: "VoltorbFlip.com - The Best Calculator and Solver"
+  heading: "VoltorbFlip.com"
+  description: "The best online Voltorb Flip calculator and solver. Instantly get the answer to any Voltorb Flip puzzle from Pokemon Heart Gold and Soul Silver."

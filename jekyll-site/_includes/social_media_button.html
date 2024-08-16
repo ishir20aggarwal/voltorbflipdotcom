@@ -1,0 +1,9 @@
+<a
+        {% if include.offsite %}
+        target="_blank" rel="noopener noreferrer"
+        {% endif %}
+        class="btn {{ include.style }} btn-xl mx-2"
+        href="{{ include.url }}"
+        role="button">
+    <i class="{{ include.fa }}"></i>
+</a>

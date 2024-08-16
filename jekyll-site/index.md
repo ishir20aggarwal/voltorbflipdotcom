@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<h1>{{site.meta.heading}}</h1>
+
 <div class="text console">
   <div id="console" class="spacing win">
     <div id="consoletext" class="inner">
@@ -10,7 +12,7 @@ layout: default
   </div>
 </div>
 
-<table id="board">
+<table class="legacy-table" id="board">
   <tr>
     <td id="card00"/><td id="card10"/><td id="card20"/><td id="card30"/><td id="card40"/>
     <td class="red">
@@ -78,8 +80,10 @@ layout: default
   </tr>
 </table>
 
+<div class="text-center">
 <a href="#" id="solve" class="blue">Solve</a>
 <a href="#" id="reset" class="blue right">Reset</a>
+</div>
 
 <div class="text">
   <div class="spacing info">
@@ -91,7 +95,12 @@ layout: default
   </div>
 </div>
 
-<script type="text/javascript" src="assets/vflip.js"></script>
+<div class="mb-3 text-center">
+    {% include social_media_button.html style="btn-dark" offsite=true url=site.social_media_links.github fa="fa-brands fa-github" %}
+    {% include social_media_button.html style="btn-dark" offsite=true url=site.social_media_links.twitter fa="fa-brands fa-x-twitter" %}
+</div>
+
+<script type="text/javascript" src="static/vflip.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function() {

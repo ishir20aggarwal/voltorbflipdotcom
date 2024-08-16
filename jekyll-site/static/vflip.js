@@ -6,8 +6,8 @@ var MESSAGE_WELCOME = "Welcome! Please input the Point and Voltorb totals.";
 var MESSAGE_LOADING = "Solving...";
 var MESSAGE_ASK_SUFFIX_CLICK_ANY_OTHER_CARD = " (Or click any other Card!)"
 var MESSAGE_ASK_SAFE = "What is this Card?" + MESSAGE_ASK_SUFFIX_CLICK_ANY_OTHER_CARD;
-var MESSAGE_ASK_UNSAFE = "What is this Card? $% chance it's a <img src=\"/assets/images/volt.png\" />." + MESSAGE_ASK_SUFFIX_CLICK_ANY_OTHER_CARD
-var MESSAGE_WIN = "Game clear! You've found all the hidden <img src=\"/assets/images/3.png\"> and <img src=\"/assets/images/2.png\"> cards.";
+var MESSAGE_ASK_UNSAFE = "What is this Card? $% chance it's a <img src=\"/static/images/volt.png\" />." + MESSAGE_ASK_SUFFIX_CLICK_ANY_OTHER_CARD
+var MESSAGE_WIN = "Game clear! You've found all the hidden <img src=\"/static/images/3.png\"> and <img src=\"/static/images/2.png\"> cards.";
 var MESSAGE_LOSE = "You lose! (Or click on any un-flipped Card to keep going.)"
 var MESSAGE_ERROR_IMPOSSIBLE_BOARD = "This board is not possible. Please check your input.";
 var MESSAGE_ERROR_TIMEOUT = "This board is too complex for me to solve. Sorry. :(";

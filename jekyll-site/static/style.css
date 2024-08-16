@@ -5,43 +5,32 @@ body {
   padding: 0;
 }
 
-div#social-media {
-  position:absolute;
-  right: 0;
+@media (min-width: 760px) {
+  	.main-container-1c {
+    	max-width: 740px !important;
+  	}
 }
 
-img.social-media-icon {
-  margin-left: 5px;
+@media (min-width: 1280px) {
+    .main-container-2c {
+    	max-width: 1260px !important;
+  	}
 }
 
-div.container {
-  margin: 0 auto 0 auto;
-  text-align: center;
-  position: relative;
-  white-space: nowrap;
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 32px;
+    border-radius: 10px;
 }
 
-div.column {
-  position: relative;
-
-  display: inline-block;
-  height: 604px;
-  width: 160px;
-
-  vertical-align: top;
-  top: 35px;
+.main-container {
+    margin: 0px auto;
+    padding: 0px;
 }
 
-div.content {
-  position: relative;
-
-  width: 600px;
-  padding-bottom: 1em;
-
-  display: inline-block;
-  margin: 0.5em auto 0.5em auto;
-
-  text-align: center;
+.vf-ad-card {
+    margin: 0 auto;
+    max-width: 480px;
 }
 
 h1 {
@@ -88,18 +77,9 @@ li a {
   font-weight: bold;
 }
 
-li a.first {
-  border-left: 0;
-}
-
-li a.selected {
-  background-color: #31b068;
-  border-bottom: none;
-}
-
 div.text {
   width: 90%;
-  margin: 0.2em auto 0 auto;
+  margin: 1em auto 1em auto;
   padding: 6px;
 
   border: 1px #404040 solid;
@@ -107,6 +87,7 @@ div.text {
 
   background-color: #a2c6b1;
   white-space: normal;
+  text-align: center;
 }
 
 div.text.console {
@@ -173,24 +154,8 @@ div.text.console img {
   vertical-align: -0.5em;
 }
 
-table.prizes {
-  width: 90%;
-  margin: 1em auto 1em auto;
-  border-spacing: 0;
-  border-collapse: collapse;
-}
-
-table.prizes td, table.prizes th {
-  border: 1px solid black;
-  padding: 0.2em;
-}
-
-table.prizes tr {
-  background-color: #e4e9fd;
-}
-
 a.blue {
-  background-image: url("/assets/images/buttonbg.png");
+  background-image: url("/static/images/buttonbg.png");
   background-size: contain;
 
   color: #f8f8f8;
@@ -303,7 +268,7 @@ table#board tr td.known {
 }
 
 table#board tr td.unknown {
-  background-image: url("/assets/images/cellbg.png");
+  background-image: url('/static/images/cellbg.png');
   background-size: cover;
   background-position: center;
   border: 2px solid #173025;
@@ -313,7 +278,7 @@ table#board tr td.voltorb {
   background-color: #b88880;
   border: 2px solid #173025;
 
-  background-image:url('/assets/images/voltorb-hit.png');
+  background-image:url('/static/images/voltorb-hit.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -353,19 +318,19 @@ table#board tr td.ask table td {
 }
 
 table#board tr td.ask a.three {
-  background-image: url("/assets/images/3.png");
+  background-image: url('/static/images/3.png');
 }
 
 table#board tr td.ask a.two {
-  background-image: url("/assets/images/2.png");
+  background-image: url('/static/images/2.png');
 } 
 
 table#board tr td.ask a.one {
-  background-image: url("/assets/images/1.png");
+  background-image: url('/static/images/1.png');
 } 
 
 table#board tr td.ask a.volt {
-  background-image: url("/assets/images/volt.png");
+  background-image: url('/static/images/volt.png');
 }
 
 table#board tr td.ask a div.buttonoff {
@@ -412,7 +377,7 @@ table#board tr td div.whitesep {
 }
 
 table#board tr td div.voltorb {
-  background-image:url('/assets/images/voltorb.png');
+  background-image:url('/static/images/voltorb.png');
   background-position: left center;
   background-repeat: no-repeat;
   padding-left: 15px;
@@ -421,61 +386,9 @@ table#board tr td div.voltorb {
   margin-left: 2px;
 }
 
-/* bottom area */
+/* legacy tables */
 
-.black-fade {
-  background-image: url("/assets/images/black_gradient.png");
-  background-repeat: repeat-x;
-  height: 64px;
-  width: 100%;
-}
-
-.black-area {
-  width: 100%;
-  background-color: black;
-  padding-bottom: 15px;
-}
-
-.black-area-container {
-  margin: 0 auto 0 auto;
-  text-align: center;
-  position: relative;
-}
-
-.black-area-content {
-  position: relative;
-
-  width: 600px;
-  padding-bottom: 1em;
-
-  display: inline-block;
-  margin: 0.5em auto 0.5em auto;
-
-  text-align: center;
-
-  color: white;
-}
-
-.black-area-content p {
-  line-height: 1.3em;
-}
-
-.black-area p {
-  font-size: 1.1em;
-}
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  border: 2px white solid;
-}
-.embed-container iframe, .embed-container object, .embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+table.legacy-table {
+  line-height: 1 !important;
+  border-collapse: separate;
 }
