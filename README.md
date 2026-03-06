@@ -5,7 +5,7 @@
 Voltorb Flip is a puzzle minigame found in the Goldenrod Game Corner and Celadon Game Corner in Pokemon Heart Gold and Soul Silver for the Nintendo DS. It is a game of both skill and chance that plays like a cross between Picross and Minesweeper. It replaces the traditional slot machines found in past Game Corners, and appears in all languages of the games, except for the Japanese release, which instead has slot machines. For an in-depth explanation of the rules of Voltorb Flip, see [Bulbapedia's article on Voltorb Flip](http://bulbapedia.bulbagarden.net/wiki/Voltorb_Flip).
 
 VoltorbFlip.com is a website that takes Voltorb Flip puzzles as input and automatically solves them as efficiently as possible. Since Voltorb Flip has an element of chance to it though, this solver cannot successfully solve every single puzzle 100% of the time. However, it does tell the user the best moves they can make in any puzzle.
-
+ 
 ### How It Works
 
 Given a board as input, which includes the row/column totals as well as any flipped cards' values, the solver follows a simple algorithm:
